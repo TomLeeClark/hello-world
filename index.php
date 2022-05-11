@@ -15,7 +15,9 @@ session_start();
     $_SESSION['find-name'] = $_POST['find-name'];
     $name_6 = ['Аня'=>'Ильченко', 'Влад'=>'Неильченко','Виталий'=>'Безбородов','Людмила'=>'Василько','Александр'=>'Иванов'];
     $key = array_search(trim($_SESSION['find-name']), $name_6);
-    $_SESSION['your-name'] = 'Твоё имя: '.$key;
+    $_SESSION['your-name'] = 'Твоё имя: '.$key. 'some';
+
+
 ?>
 
 <div class="container mt-5">
